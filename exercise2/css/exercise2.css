@@ -1,0 +1,174 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, 
+label, 
+input, 
+p, 
+button {
+    font-size: 14px;
+}
+
+h1,
+label {
+    font-weight: 700;
+}
+
+label.error {
+    color: #db636b;
+}
+
+.error_message {
+    height: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.cb {
+    clear: both;
+}
+
+.form_wrapper {
+    border: 1px solid #f2f4f6;
+    max-width: 920px;
+}
+
+.header {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #e1e6eb;
+}
+
+.header h1 {
+    margin-left: 28px;
+}
+
+form {
+    padding: 50px 43px 35px 43px;
+}
+
+.form_element_wrapper {
+    margin-bottom: 10px;
+}
+
+.form_element_wrapper .form_element{
+    width: 100%;
+    max-width: 600px;
+}
+.form_element_wrapper.date_of_birth .form_element{
+    float: left;
+}
+.form_element_wrapper .title {
+    margin-bottom: 20px;
+}
+
+.form_element_wrapper.date_of_birth input.year {
+    margin-right: 0;
+}
+.form_element_wrapper.buttons {
+    margin-top: 30px;
+    margin-bottom: 45px; 
+    height: 40px; 
+}
+
+input { 
+    width: calc(100% - 18px);
+    max-width: 600px;
+    height: 40px;
+    padding-left: 15px;
+    padding-left: 15px;
+    border: 1px solid #e1e6eb;
+    background-color: #f7f8f9;
+}
+input.error {
+    border: 1px solid #db636b;
+}
+input, 
+button.submit {
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+input[type="checkbox"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 13px;
+    height: 15px;
+    border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    border: 1px solid #e1e6eb;
+    background-color: #f7f8f9;
+}
+input[type="text"]:focus,
+input[type="checkbox"]:focus,
+button:focus {
+    outline: 0;
+}
+input[type="checkbox"]:checked {
+    background: url("img/checkmark.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.checkbox_wrapper {
+    height: 20px;
+}
+.checkbox_wrapper p {
+    margin: 0 0 0 5px;
+    line-height: 22px;
+}
+.checkbox_wrapper > * {
+    float: left;
+}
+button {
+    width: 100%;
+    cursor: pointer;
+    border: 0;
+}
+button.reset {
+    color: #00abc9;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+button.submit {
+    color: #FFFFFF;
+    background-color: #00abc9;
+    height: 40px;
+
+}
+
+@media only screen and (min-width: 640px) {
+    .form_element_wrapper.date_of_birth .form_element {
+        width: 33%;
+    }
+    .form_element_wrapper.date_of_birth input {
+        width: calc(100% - 40px);
+        margin-right: 30px;
+    }
+    .form_element_wrapper.date_of_birth input.year {
+        width: calc(100% - 10px);
+    }
+    .form_element_wrapper.buttons {
+        margin-top: 0;
+    }
+    .form_element_wrapper.buttons .form_element {
+        width: auto;
+        float: right;
+    }
+    button {
+        width: auto;
+    }
+    button.submit {
+        width: 90px;
+    }
+    input {
+        width: 97%;
+    }
+    .error_message {
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tom Galpin -- Exercise 2 -- For BC</title>
+    <meta name="description" content="Tom Galpin -- Exercise 2 -- For BC">
+    <link rel="stylesheet" href="css/exercise2.css">
+</head>
+<body>
+    <div class="form_wrapper">
+        <div class="header">
+            <h1>Personal Info</h1> 
+        </div>
+        <form name="bcForm" method="post">
+            <div class="form_element_wrapper">
+                <div class="form_element full_width">
+                    <div class="title">
+                        <label for="name">Full Name</label>
+                    </div>
+                    <input class="full_name full_width_input" type="text" name="full_name" placeholder="Jane Doe"/>
+                    <div class="error_message full_name"></div>
+                </div>
+            </div>
+            <div class="form_element_wrapper">
+                <div class="form_element full_width">
+                    <div class="title">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <input class="email full_width_input" type="text" name="email" placeholder="example@bigcommerce.com"/>
+                    <div class="error_message email"></div>
+                </div>
+            </div>
+            <div class="form_element_wrapper date_of_birth">
+                <div class="title">
+                    <label for="date">Date of Birth</label>
+                </div>
+                <div class="form_element">
+                    <div class="title">
+                        <label for="month">Month</label>
+                    </div>
+                    <input class="month" type="text" name="month" placeholder="06"/>
+                    <div class="error_message month"></div>
+                </div>
+                <div class="form_element">
+                    <div class="title">
+                        <label for="day">Day</label>
+                    </div>
+                    <input class="day" type="text" name="day" placeholder="12"/>
+                    <div class="error_message day"></div>
+                </div>
+                <div class="form_element">
+                    <div class="title">
+                        <label for="year">Year</label>
+                    </div>
+                    <input class="year" type="text" name="year" placeholder="1980"/>
+                    <div class="error_message year"></div>
+                </div>
+                <div class="cb"></div>
+            </div>
+            
+            <div class="form_element_wrapper">
+                <div class="form_element">
+                    <div class="title">
+                        <label for="terms">Terms of Service</label>
+                    </div>
+                    <div class="checkbox_wrapper">
+                        <input class="terms" type="checkbox" name="terms"/>
+                        <p>Agree</p>
+                    </div>
+                    <div class="error_message terms"></div>
+                </div>
+            </div>
+            <div class="form_element_wrapper buttons">
+                <div class="form_element">
+                    <button class="reset" type="reset">Reset</button>
+                    <button class="submit" type="submit">Submit</button>
+                    <div class="error_message other"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script src="js/exercise2.js"></script>
+</body>
+</html>
